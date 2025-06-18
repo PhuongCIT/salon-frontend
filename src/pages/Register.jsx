@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { FiUser, FiMail, FiPhone, FiLock, FiArrowRight } from "react-icons/fi";
 import { FaSpinner } from "react-icons/fa";
+import { BASE_URL } from "../axios/axios";
 
 const Register = () => {
   //tilte
@@ -11,7 +12,6 @@ const Register = () => {
     document.title = "SalonHair - Trang đăng ký";
   }, []);
 
-  const backendUrl = "http://localhost:8080/api";
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -57,7 +57,7 @@ const Register = () => {
 
     setIsLoading(true);
     try {
-      await axios.post(`${backendUrl}/auth/register`, formData);
+      await axios.post(`${BASE_URL}/api/auth/register`, formData);
 
       toast.success("Đăng ký thành công! Vui lòng kiểm tra email để xác thực");
       navigate("/login");

@@ -424,7 +424,7 @@ const Staff = () => {
       </div>
 
       {/* Custom Styles */}
-      <style jsx>{`
+      <style jsx="true">{`
         .custom-dots {
           bottom: -60px;
         }

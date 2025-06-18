@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import appointmentApi from "../services/appointmentsService";
 import workShiftApi from "../services/workShiftService";
+import { BASE_URL } from "../axios/axios";
 
 const AuthContext = createContext();
 
@@ -15,7 +16,7 @@ export function AuthProvider({ children }) {
   const [appointments, setAppointments] = useState([]);
   const [workShifts, setWorkShift] = useState([]);
 
-  const baseURL = "http://localhost:8080/api";
+  const baseURL = `${BASE_URL}/api`;
 
   //   // Đăng nhập
   const login = async (email, password) => {

@@ -1,8 +1,9 @@
 import axios from "axios";
+import { BASE_URL } from "../axios/axios";
 
 // Tạo instance của axios với baseURL của API
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: `${BASE_URL}/api`,
 });
 
 // Tạo hàm để lấy dữ liệu từ API
