@@ -53,9 +53,7 @@ const StaffCard = ({ staff }) => {
   const [imageError, setImageError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const defaultAvatar = `https://ui-avatars.com/api/?name=${encodeURIComponent(
-    staff.name
-  )}&background=3B82F6&color=ffffff&size=200&font-size=0.6`;
+  const defaultAvatar = "https://randomuser.me/api/portraits/men/2.jpg";
 
   return (
     <div className="px-3">

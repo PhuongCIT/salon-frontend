@@ -28,6 +28,7 @@ const CardService = ({ item, index, viewMode = "grid" }) => {
   const GridView = () => (
     <Link
       to={`/services/${item._id}`}
+      key={index}
       className="group block bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
     >
       {/* Image Container */}
@@ -148,6 +149,7 @@ const CardService = ({ item, index, viewMode = "grid" }) => {
   const ListView = () => (
     <Link
       to={`/services/${item._id}`}
+      key={index}
       className="group flex gap-6 bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 p-6"
     >
       {/* Image */}

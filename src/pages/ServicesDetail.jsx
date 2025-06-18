@@ -3,7 +3,6 @@ import { useContext, useEffect, useState, useCallback } from "react";
 import CardService from "../components/CardService";
 import { AppContext } from "../context/AppContext";
 import ServiceDescription from "../components/ServiceDescription";
-import cattoc from "../assets/images/cattoc.jpg";
 import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -17,7 +16,7 @@ const ServicesDetail = () => {
   const { id: serviceId } = useParams();
   const { services, formatPrice } = useContext(AppContext);
   const { user, baseURL } = useAuth();
-  const defaultImage = cattoc;
+  const defaultImage = "https://randomuser.me/api/portraits/men/2.jpg";
 
   const [serviceInfo, setServiceInfo] = useState(null);
   const [relatedServices, setRelatedServices] = useState([]);

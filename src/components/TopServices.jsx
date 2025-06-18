@@ -218,34 +218,6 @@ const TopServices = () => {
           </p>
         </div>
 
-        {/* Stats Cards */}
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          <StatsCard
-            icon={FiGrid}
-            label="Tổng dịch vụ"
-            value={`${serviceStats.total}+`}
-            color="bg-gradient-to-r from-blue-500 to-blue-600"
-          />
-          <StatsCard
-            icon={FiTrendingUp}
-            label="Phổ biến"
-            value={`${serviceStats.popular}+`}
-            color="bg-gradient-to-r from-purple-500 to-purple-600"
-          />
-          <StatsCard
-            icon={FaHandSparkles}
-            label="Dịch vụ mới"
-            value={`${serviceStats.new}+`}
-            color="bg-gradient-to-r from-green-500 to-green-600"
-          />
-          <StatsCard
-            icon={FiStar}
-            label="Đánh giá TB"
-            value={serviceStats.rating}
-            color="bg-gradient-to-r from-yellow-500 to-orange-500"
-          />
-        </div> */}
-
         {/* Featured Services Section */}
         <div className="mb-12 ">
           <div className="flex items-center justify-between mb-8 ">

@@ -6,7 +6,6 @@ import {
   FiInfo,
   FiUser,
   FiX,
-  FiMapPin,
 } from "react-icons/fi";
 import { AppContext } from "../context/AppContext";
 import { toast } from "react-toastify";

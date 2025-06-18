@@ -2,7 +2,6 @@ import axios from "axios";
 
 export const BASE_URL = "https://salon-backend-29jb.onrender.com";
 const axiosInstance = axios.create({
-  baseURL: `${BASE_URL} /api` || "http://localhost:8080/api",
   timeout: 5000,
   headers: {
     "Content-Type": "application/json",

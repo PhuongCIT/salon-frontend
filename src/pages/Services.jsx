@@ -1,21 +1,15 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import CardService from "../components/CardService";
 import { AppContext } from "../context/AppContext";
 import {
   FiSearch,
-  FiFilter,
   FiGrid,
   FiList,
   FiChevronLeft,
   FiChevronRight,
   FiRefreshCw,
   FiAlertCircle,
-  FiStar,
-  FiClock,
-  FiDollarSign,
-  FiTrendingUp,
   FiHeart,
-  FiEye,
 } from "react-icons/fi";
 import { FaCut, FaPalette, FaHandSparkles } from "react-icons/fa";
 
@@ -265,24 +259,6 @@ const Services = () => {
 
           {/* Filter Controls */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            {/* Category Filter */}
-            {/* <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Danh mục
-              </label>
-              <select
-                value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 text-gray-800 dark:text-gray-200"
-              >
-                {categories.map((category) => (
-                  <option key={category.id} value={category.id}>
-                    {category.name}
-                  </option>
-                ))}
-              </select>
-            </div> */}
-
             {/* Price Range Filter */}
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">

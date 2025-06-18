@@ -24,7 +24,6 @@ import {
   FiChevronRight,
   FiX,
   FiMessageSquare,
-  FiEye,
 } from "react-icons/fi";
 import MyScheduleCalendar from "../components/MyScheduleCalendar";
 
